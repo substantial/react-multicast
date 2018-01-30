@@ -1,0 +1,28 @@
+{
+  "name": "react-multicast",
+  "version": "1.0.0",
+  "description": "Send your render prop arguments to multiple components at once",
+  "source": "src/index.js",
+  "main": "dist/react-multicast.js",
+  "module": "dist/react-multicast.m.js",
+  "scripts": {
+    "prepare": "microbundle",
+    "dev": "karmatic watch",
+    "test": "microbundle && karmatic",
+    "release": "npm t && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "keywords": [
+    "react"
+  ],
+  "author": "Aaron Jensen <aaronjensen@gmail.com>",
+  "repository": "substantial/react-multicast",
+  "license": "MIT",
+  "devDependencies": {
+    "karmatic": "^1.0.6",
+    "microbundle": "^0.4.3"
+  }
+}
