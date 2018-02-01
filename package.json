@@ -22,6 +22,7 @@
   "repository": "substantial/react-multicast",
   "license": "MIT",
   "devDependencies": {
+    "karmatic": "^1.0.6",
     "microbundle": "^0.4.3"
   }
 }
