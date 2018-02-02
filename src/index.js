@@ -1,1 +1,3 @@
-export default () => 3
+import MulticastProvider from './MulticastProvider'
+import Multicast from './Multicast'
+export { MulticastProvider, Multicast }

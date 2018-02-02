@@ -6,9 +6,9 @@
   "main": "dist/react-multicast.js",
   "module": "dist/react-multicast.m.js",
   "scripts": {
-    "prepare": "microbundle",
+    "prepare": "microbundle --jsx React.createElement",
     "dev": "karmatic watch",
-    "test": "microbundle && karmatic",
+    "test": "microbundle --jsx React.createElement && karmatic",
     "release": "npm t && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "files": [
@@ -21,8 +21,12 @@
   "author": "Aaron Jensen <aaronjensen@gmail.com>",
   "repository": "substantial/react-multicast",
   "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 16.2.0"
+  },
   "devDependencies": {
     "karmatic": "^1.0.6",
-    "microbundle": "^0.4.3"
+    "microbundle": "^0.4.3",
+    "react": "^16.2.0"
   }
 }
